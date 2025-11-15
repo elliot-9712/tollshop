@@ -28,7 +28,7 @@ async function fetchTickets() {
 fetchTickets();
 
 const template = document.getElementById("code-block-template");
-const output = document.getElementById("products");
+const output = document.getElementById("output");
 
 function renderCodeBlock({ title, shortDescription, price, img }) {
   const clone = template.content.cloneNode(true);
