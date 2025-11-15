@@ -4,14 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet">
+    <link href="src/sass/style.scss" rel="stylesheet">
     <title>final-assignment</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <div id="app"></div>
+    <header>
+      <nav id="mainnav">
+        <ul>
+          <li>Tollershop</li>
+          <li>Ticket Overview</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="featured-products">
+        <h1>Ticketshop</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, cupiditate? Cum, ducimus a porro praesentium soluta aut atque exercitationem nam labore libero! Voluptatibus provident in itaque deleniti dolore beatae consectetur?</p>
+      </section>
+      <section id="products">
+        <h2>Featured Products</h2>
+          <template id="code-block-template">
+          <article class="code-wrapper">
+            <button class="featured-btn">Featured</button>
+            <img class="img" src="" alt="Product image">
+            <div class="text">
+              <h3 class="title"></h3>
+              <p class="shortDescription"></p>
+            <div class="price-details">
+              <p class="price"></p>
+              <button class="details-btn">See Details</button>
+            </div>
+            </div>
+          </article>
+          </template>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

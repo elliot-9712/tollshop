@@ -1,0 +1,33 @@
+header {
+    width: 100vw;
+    height: 55vh;
+    background: url("/src/images/ski-lift.jpg");
+
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#mainnav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        padding: var(--smp) var(--mdp);
+        cursor: pointer;
+    }
+
+    li:first-child {
+        font-weight: 700;
+        font-size: rem(13);
+        letter-spacing: -5%;
+        text-transform: uppercase;
+    }
+
+    li:last-child {
+        font-weight: 500;
+        font-size: rem(16);
+        letter-spacing: -3%;
+        text-decoration: underline solid;
+    }
+}

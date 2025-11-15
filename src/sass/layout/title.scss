@@ -1,0 +1,23 @@
+section#featured-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 35vw;
+    margin: 0 auto;
+
+
+    h1 {
+        font-size: rem(196);
+        font-weight: 500;
+        letter-spacing: -3%;
+        margin-top: -6.2rem;
+
+        padding-bottom: rem(16);
+    }
+
+    p {
+        letter-spacing: -3%;
+    }
+}

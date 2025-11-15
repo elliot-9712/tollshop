@@ -1,24 +1,46 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const data = "db.json";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+async function fetchTickets() {
+  try {
+    const res = await fetch(data);
 
-setupCounter(document.querySelector('#counter'))
+    if (!res.ok) {
+      console.log(res.status, res.statusText);
+      return;
+    }
+
+    const product = await res.json();
+
+    console.log(product);
+
+  product.tickets.forEach(ticket => {
+      renderCodeBlock({
+        title: ticket.title,
+        shortDescription: ticket.shortDescription,
+        price: ticket.price,
+        img: ticket.img,
+      });
+    });
+  } catch (err) {
+    console.log("Fetch failed:", err);
+  }
+}
+fetchTickets();
+
+const template = document.getElementById("code-block-template");
+const output = document.getElementById("products");
+
+function renderCodeBlock({ title, shortDescription, price, img }) {
+  const clone = template.content.cloneNode(true);
+
+  clone.querySelector(".title").textContent = title;
+  clone.querySelector(".shortDescription").textContent = shortDescription;
+  clone.querySelector(".price").textContent = `from ${price} €`;
+
+  clone.querySelector(".img").src = `https://images.unsplash.com/photo-${img}`;
+
+  clone.querySelector(".featured-btn");
+  clone.querySelector(".details-btn");
+
+  output.appendChild(clone);
+}
