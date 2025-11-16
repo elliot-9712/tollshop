@@ -24,6 +24,7 @@
       "shortDescription": "Nighttime skiing under the lights.",
       "detailledDescription": "Experience the mountain in a unique way with illuminated evening slopes, available on selected nights.",
       "price": 29,
+      "isFeatured": true,
       "img": "1567798664060-0f9a2a5e31e9"
     },
     {
@@ -67,6 +68,7 @@
       "shortDescription": "Access to all cross-country trails.",
       "detailledDescription": "Explore groomed cross-country skiing trails suited for both skating and classic technique.",
       "price": 14,
+      "isFeatured": true,
       "img": "1581369263827-1fb8c1b22458"
     },
     {
@@ -200,6 +202,7 @@
       "shortDescription": "Locker for skis/snowboards.",
       "detailledDescription": "Secure storage for your equipment for one day. Heated lockers available.",
       "price": 6,
+      "isFeatured": true,
       "img": "1667030448398-1d7efc1952c2"
     },
     {
@@ -250,6 +253,7 @@
       "shortDescription": "Lift ticket for sunset viewpoint.",
       "detailledDescription": "Catch the most beautiful mountain sunset from our dedicated vista plateau.",
       "price": 14,
+      "isFeatured": true,
       "img": "1531436040007-7216019112d7"
     }
   ],

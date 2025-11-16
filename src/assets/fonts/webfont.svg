@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="webfont" horiz-adv-x="25">
+    <font-face font-family="webfont"
+      units-per-em="26" ascent="26"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow"
+      unicode="&#xEA01;"
+      horiz-adv-x="25" d="M0 10.9937V15.0338H18.1107L9.82207 23.49894L12.271 26L25 13L12.271 0L9.82207 2.5011L18.1376 10.9937H0z" />
+    <glyph glyph-name="arrow-1"
+      unicode="&#x61;&#x72;&#x72;&#x6F;&#x77;"
+      horiz-adv-x="25" d="M0 10.9937V15.0338H18.1107L9.82207 23.49894L12.271 26L25 13L12.271 0L9.82207 2.5011L18.1376 10.9937H0z" />
+    <glyph glyph-name="bookmark"
+      unicode="&#xEA02;"
+      horiz-adv-x="24" d="M6.0097656 22C4.9143111 22 4.0097656 21.0974012 4.0097656 20.0019531L4 2L12 5L20 2L20 3.443359L20 20C20 21.0930628 19.093063 22 18 22L6.0097656 22zM6.0097656 20L18 20L18 4.886719L12 7.136719L6.0019531 4.886719L6.0097656 20z" />
+    <glyph glyph-name="bookmark-1"
+      unicode="&#x62;&#x6F;&#x6F;&#x6B;&#x6D;&#x61;&#x72;&#x6B;"
+      horiz-adv-x="24" d="M6.0097656 22C4.9143111 22 4.0097656 21.0974012 4.0097656 20.0019531L4 2L12 5L20 2L20 3.443359L20 20C20 21.0930628 19.093063 22 18 22L6.0097656 22zM6.0097656 20L18 20L18 4.886719L12 7.136719L6.0019531 4.886719L6.0097656 20z" />
+  </font>
+</defs>
+</svg>

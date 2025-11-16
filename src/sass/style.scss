@@ -4,7 +4,12 @@
 @import "reset";
 @import "variables";
 
-// Layouts
-@import "layout/mainnav";
-@import "layout/title";
-@import "layout/products";
+// Layout/home
+@import "layout/home/mainnav";
+@import "layout/home/title";
+@import "layout/home/products";
+
+// layout/tickets
+@import "layout/tickets/pagination";
+
+// layout/details

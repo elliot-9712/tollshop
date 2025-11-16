@@ -57,11 +57,20 @@ section#products {
 
      .price-details {
         display: flex;
-        justify-content: space-between;
         margin-top: rem(30);
 
         .price {
             font-size: rem(16);
+        }
+
+        .bookmark-btn {
+            margin-left: auto;
+            margin-right: rem(10);
+            cursor: pointer;
+
+            background-color: #F3F3F3;
+            padding: rem(7) rem(6);
+            border-radius: rem(100);
         }
 
         .details-btn {
@@ -82,6 +91,5 @@ section#products {
         border-radius: rem(100);
 
         font-size: rem(10);
-        cursor: pointer;
     }
 
