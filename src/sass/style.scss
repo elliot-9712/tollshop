@@ -2,14 +2,14 @@
 @import "base";
 @import "fonts";
 @import "reset";
-@import "variables";
 
 // Layout/home
-@import "layout/home/mainnav";
+@import "layout/home/home-nav";
 @import "layout/home/title";
 @import "layout/home/products";
 
 // layout/tickets
+@import "layout/tickets/ticket-nav";
 @import "layout/tickets/pagination";
 
 // layout/details
