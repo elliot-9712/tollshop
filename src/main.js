@@ -44,7 +44,7 @@ async function render(path) {
 // ---------------------
 // TICKETS LOGIC
 // ---------------------
-const data = "db.json";
+const data = `https://my-json-server.typicode.com/j-handlechner/ticket-fake-api/tickets`;
 
 async function fetchTickets({ featuredOnly }) {
   try {
@@ -54,7 +54,7 @@ async function fetchTickets({ featuredOnly }) {
       return;
     }
 
-    const product = await res.json();
+    const ticket = await res.json();
 
     const template = document.getElementById("code-block-template");
     const output = document.getElementById("output");
@@ -62,7 +62,7 @@ async function fetchTickets({ featuredOnly }) {
 
     output.innerHTML = "";
 
-    product.tickets
+    ticket
       .filter(ticket => (featuredOnly ? ticket.isFeatured : true))
       .forEach(ticket => {
         renderCodeBlock({
