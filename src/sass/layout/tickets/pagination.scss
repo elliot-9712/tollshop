@@ -19,10 +19,6 @@ nav#pagination {
             opacity: 100%;
         }
 
-        // li:nth-child(3) {
-        //     padding-inline: rem(27);
-        // }
-
         .lArrow {
             transform: scaleX(-1);
             padding-inline-start: rem(39);
@@ -34,6 +30,13 @@ nav#pagination {
 
         .active {
             opacity: 100%;
+            font-weight: 600;
+            color: black;
+        }
+
+        .disabled {
+            opacity: 40%;
+            pointer-events: none;
         }
     }
 }
