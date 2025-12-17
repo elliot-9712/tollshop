@@ -1,0 +1,45 @@
+#ticket-nav {
+    letter-spacing: -3%;
+    font-weight: 500;
+
+        ul {
+        display: flex;
+        justify-content: space-between;
+
+        padding: rem(50);
+        cursor: pointer;
+    }
+
+    li:first-child {
+        font-weight: 700;
+        font-size: rem(13);
+        letter-spacing: -5%;
+        text-transform: uppercase;
+    }
+
+    li:last-child {
+        font-weight: 500;
+        font-size: rem(16);
+        letter-spacing: -3%;
+        text-decoration: underline solid;
+    }
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-inline: auto;
+    margin-block: 0 rem(96);
+
+    h1 {
+        font-size: rem(116);
+    }
+
+    p {
+        font-size: rem(16);
+        max-width: 25vw;
+    }
+}
