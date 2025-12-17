@@ -49,9 +49,9 @@ function getPageFromURL() {
 // ROUTES DEFINITION
 // ---------------------
 const routes = {
-  "/": async () => await loadHTML("/src/views/home.html"),
-  "/tickets": async () => await loadHTML("/src/views/tickets.html"),
-  "/details/:id": async () => await loadHTML("/src/views/details.html"),
+  "/": async () => await loadHTML("/views/home.html"),
+  "/tickets": async () => await loadHTML("/views/tickets.html"),
+  "/details/:id": async () => await loadHTML("/views/details.html"),
   "*": () => "<h2>404 - Page Not Found</h2>",
 };
 
