@@ -9,7 +9,7 @@ import {
 // ---------------------
 // APP ROOT
 // ---------------------
-export const app = document.body;
+export const app = document.querySelector("#app");
 
 // ---------------------
 // SPA NAVIGATION
